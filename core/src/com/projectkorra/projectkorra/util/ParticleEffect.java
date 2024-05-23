@@ -1,6 +1,5 @@
 package com.projectkorra.projectkorra.util;
 
-import com.projectkorra.projectkorra.GeneralMethods;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.Particle.DustOptions;
@@ -55,7 +54,8 @@ public enum ParticleEffect {
 	FLAME (Particle.FLAME),
 	FLASH (Particle.FLASH),
 	HEART (Particle.HEART),
-	
+	SCRAPE (Particle.SCRAPE),
+
 	/**
 	 * Applicable data: {@link ItemStack}
 	 */
@@ -85,8 +85,7 @@ public enum ParticleEffect {
 	SPELL (Particle.SPELL),
 	SPELL_INSTANT (Particle.SPELL_INSTANT), @Deprecated INSTANT_SPELL (Particle.SPELL_INSTANT),
 	SPELL_MOB (Particle.SPELL_MOB), @Deprecated MOB_SPELL (Particle.SPELL_MOB),
-	SPELL_MOB_AMBIENT (GeneralMethods.getMCVersion() >= 1205 ? Particle.SPELL_MOB : Particle.SPELL_MOB_AMBIENT),
-	@Deprecated MOB_SPELL_AMBIENT (GeneralMethods.getMCVersion() >= 1205 ? Particle.SPELL_MOB : Particle.SPELL_MOB_AMBIENT),
+	SPELL_MOB_AMBIENT (Particle.SPELL_MOB_AMBIENT), @Deprecated MOB_SPELL_AMBIENT (Particle.SPELL_MOB_AMBIENT),
 	SPELL_WITCH (Particle.SPELL_WITCH), @Deprecated WITCH_SPELL (Particle.SPELL_WITCH),
 	SPIT (Particle.SPIT),
 	SQUID_INK (Particle.SQUID_INK),
