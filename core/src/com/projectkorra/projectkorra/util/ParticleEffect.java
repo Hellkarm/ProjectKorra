@@ -55,6 +55,7 @@ public enum ParticleEffect {
 	FLAME (Particle.FLAME),
 	FLASH (Particle.FLASH),
 	HEART (Particle.HEART),
+	SCRAPE (Particle.SCRAPE),
 	
 	/**
 	 * Applicable data: {@link ItemStack}
